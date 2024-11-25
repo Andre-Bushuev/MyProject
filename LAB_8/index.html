@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    
+    <!-- Первый блок -->
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <div class="wrapper-inner">
+            <div class="offer">
+                <h1 class="offer__title animate__animated animate__bounce">С помощью нас Вы сможете создать то, о чем</h1>  <!--добавим анимацию для заголовка первого блок (animate.css)-->
+                <span class="offer__span">желаете!</span>
+                <p class="offer__text"> Наши возможности + опыт позволяет Вам достичь огромнго успеха.
+                Мы верим в вас! И знаем это на 100%. Вас не остановить!</p>
+                <a href="#" class="btn animate__animated animate__fadeInLeft">Узнать больше...</a> <!--добавим анимацию для кнопки (animate.css)-->
+            </div>
+            <img class="img1" src="img/header-img.png" alt="picture">
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Второй блок -->
+    <section class="section1">
+        <div class="container">
+            <h2 class="info__title">Что Вам необходимо?</h2>
+            <div class="info-blocks">
+                <div class="block1">
+                    <img src="img/f3.png" alt="lineyka" class="block__icon">
+                    <h3 class="info__title">Первый блок</h3>
+                    <p class="block__text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="block1">
+                    <img src="img/f4.png" alt="shar" class="block__icon">
+                    <h3 class="info__title">Второй блок</h3>
+                    <p class="block__text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="block1">
+                    <img src="img/f5.png" alt="flag" class="block__icon">
+                    <h3 class="info__title">Третий блок</h3>
+                    <p class="block__text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-section">
+        <div class="container">
+            <form id="orderForm" class="order-form">
+                <!-- Информация о заказе -->
+                <div class="order-info">
+                    <h3>Информация о заказе</h3>
+    
+                    <label for="firstName">Имя:</label>
+                    <input type="text" id="firstName" placeholder="Введите ваше имя" required>
+                    <span class="error-message" id="firstNameError"></span>
+    
+                    <label for="lastName">Фамилия:</label>
+                    <input type="text" id="lastName" placeholder="Введите вашу фамилию" required>
+                    <span class="error-message" id="lastNameError"></span>
+    
+                    <label for="phoneNumber">Номер телефона:</label>
+                    <input type="tel" id="phoneNumber" placeholder="XXX-XXX-XXXX" required>
+                    <span class="error-message" id="phoneNumberError"></span>
+    
+                    <label for="destination">Пункт назначения:</label>
+                    <input type="text" id="destination" placeholder="Введите пункт назначения" required>
+                    <span class="error-message" id="destinationError"></span>
+    
+                    <label for="dateTime">Дата и время:</label>
+                    <input type="datetime-local" id="dateTime" required>
+                    <span class="error-message" id="dateTimeError"></span>
+    
+                    <label for="quantity">Количество:</label>
+                    <input type="number" id="quantity" min="1" placeholder="Введите количество" required>
+                    <span class="error-message" id="quantityError"></span>
+    
+                    <label for="paymentMethod">Способ оплаты:</label>
+                    <select id="paymentMethod" required>
+                        <option value="">Выберите способ оплаты</option>
+                        <option value="Cash">Наличные</option>
+                        <option value="Credit Card">Кредитная карта</option>
+                        <option value="PayPal">PayPal</option>
+                    </select>
+                    <span class="error-message" id="paymentMethodError"></span>
+    
+                    <button type="button" id="sendOrderButton">Отправить заказ</button>
+                </div>
+    
+                <!-- Итоговый блок -->
+                <div class="order-summary">
+                    <h3>Итог заказа</h3>
+                    <div id="summaryContent">
+                        <p>Данные заказа отсутствуют</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+
+    <!-- Третий блок -->
+    <section class="callback">
+        <div class="container">
+            <h2 class="callback__title">Форма заказа обратного звонка</h2>
+            <form action="#" class="callback-form">
+                <div><input type="text" class="callback__input" placeholder="Имя"></div>
+                <div><input type="email" class="callback__input" placeholder="Введите свой E-mail"></div>
+                <div><input type="tel" class="callback__input" placeholder="Телефон"></div>
+                <div><input type="text" class="callback__input" placeholder="Какая тема Вас интересует?"></div>
+                <a href="#" class="callback__button">Отправить вопрос!</a>
+            </form>
+        </div>
+    </section>
+ 
+
+    <!-- Четвертый блок -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© Все права на этом сайте защищены</p>
+        </div>
+    </footer>
+</body>
+</html>

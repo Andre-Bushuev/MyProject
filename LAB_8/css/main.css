@@ -1,0 +1,418 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	line-height: 1.65em;
+}
+
+
+/*Первый блок*/
+.header{
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, 
+	rgba(59,59,187,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+.container{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.wrapper-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.offer{
+	width: 500px;
+}
+
+.offer__title{
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+
+.offer__span{
+	text-transform: uppercase;
+	font-size: 44px;
+	font-weight: 700;
+	font-family: 'Ubuntu', sans-serif;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.offer__text{
+	font-size: 16px;
+}
+
+.btn{
+	display: block;
+	width: 220px;
+	height: 55px;
+	background-color: #ffc107; 
+	font-weight: bold;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+
+}
+
+.img1{
+	width: 500px;
+	padding-bottom: 100px;
+	padding-top: 50px;
+}
+
+
+/*Второй блок*/
+.section1 {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.info__title {
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.info-blocks {
+	
+    display: flex;
+    justify-content:space-between;
+    gap: 50px;
+}
+
+.block1 {
+    width: 250px;
+    text-align: center;
+}
+
+.block__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.block__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.block__text {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/*Третий блок*/
+.callback{
+    background-color: #f0f4fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.callback__title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.callback-form {
+    height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.callback__input {
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.callback__button {
+    width: 300px;
+    padding: 15px;
+    background-color: #ffc107; 
+	font-weight: bold;
+	color: black;
+    font-size: 14px;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*Четвертый блок*/
+.footer {
+    background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, 
+	rgba(59,59,187,1) 0%, rgba(0,212,255,1) 100%);
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+}
+
+.footer__text {
+    font-size: 14px;
+}
+
+
+
+.logo {
+    animation: logoSpin 4s linear infinite;
+    padding-top: 30px ;
+}
+
+
+/* Анимация для заголовка формы обратного звонка */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}
+
+.callback__title {
+    animation: fadeInOut 4s ease-in-out infinite;
+}
+
+/* Анимация для изображения в первом блоке */
+@keyframes imgFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.img1 {
+    animation: imgFade 2s ease-in-out;
+}
+
+/* Переход для заголовка во втором блоке */
+.info__title {
+    transition: color 0.5s ease;
+}
+
+.info__title:hover {
+    color: #ffc107;
+}
+
+/* Переход для кнопки */
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff8c00;
+    transform: scale(1.1);
+}
+
+/* Версия для больших экранов от 1200px и выше */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+/* Версия для планшетов и небольших ноутбуков от 992px до 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 960px;
+    }
+    .wrapper-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .offer, .img1 {
+        width: 70%;
+    }
+    .info-blocks {
+        flex-direction: row;
+        gap: 30px;
+    }
+    .btn, .callback__button {
+        width: 180px;
+        height: 50px;
+    }
+    .offer__title {
+        font-size: 26px;
+    }
+    .info__title {
+        font-size: 24px;
+    }
+}
+
+/* Версия для экранов 768px и меньше */
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .main-header, .contact-section, .services-section { /* заменили .header, .form-Box, .content-Box на соответствующие классы из main.css */
+        padding: 20px 0;
+    }
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-section {
+        width: 100%;
+        text-align: center;
+    }
+    .header-image {
+        width: 50%;
+        margin-top: 30px;
+    }
+    .intro-title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .intro-highlight {
+        font-size: 30px;
+    }
+    .services-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-item { 
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-form { 
+        width: 100%;
+        text-align: center;
+    }
+    .intro-btn { 
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto; 
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    button[type="submit"] {
+        width: 100%;
+        font-size: 16px;
+    }
+    .footer-text { 
+        font-size: 12px;
+    }
+}
+
+
+/* Секция заказа */
+.order-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.order-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.order-info,
+.order-summary {
+    width: 48%;
+}
+
+.order-info h3,
+.order-summary h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button{
+    background-color: #ffa500;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e69500;
+}
+
+.order-summary {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary #summaryContent {
+    margin-top: 10px;
+}
+
+.order-summary p {
+    font-size: 14px;
+    color: #666;
+}
